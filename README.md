@@ -12,6 +12,9 @@ and place the `.jar` file in your Graylog plugin directory. The plugin directory
 is the `plugins/` folder relative from your `graylog-server` directory by default
 and can be configured in your `graylog.conf` file.
 
+Lastly copy hazelcast-all jar into graylog server.
+hazelcast-all-{version}.jar (include version pom.xml) copy to {graylog.home}/embedded/jre/jre/lib/ext/hazelcast-all-{version}.jar
+
 Restart `graylog-server` and you are done.
 
 ## Usage
