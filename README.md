@@ -7,7 +7,7 @@ Buraya biseyler yaz
 
 ## Installation
 
-[Download the plugin](https://github.com/Graylog2/graylog-plugin-pagerduty/releases)
+[Download the plugin](https://github.com/kutuni/graylog-plugin-hazelcast/blob/master/target/hcplugin-0.1.jar)
 and place the `.jar` file in your Graylog plugin directory. The plugin directory
 is the `plugins/` folder relative from your `graylog-server` directory by default
 and can be configured in your `graylog.conf` file.
@@ -16,21 +16,10 @@ Restart `graylog-server` and you are done.
 
 ## Usage
 
-The only thing you need to do in your PagerDuty interface is to add a new service called *Graylog*. Click *Services* in the main menu and then hit the *Add new service* button.
+The only thing you need to do in your Hazelcast Logger (HC Logger)  interface is to add a new service called *Graylog*. Click *Services* in the main menu and then hit the *Add new service* button.
 
-![Screenshot: Adding a new service in PagerDuty](https://s3.amazonaws.com/graylog2public/images/plugin-pagerduty-ac-2.png)
+![Screenshot: Setup for plugin](https://github.com/kutuni/graylog-plugin-hazelcast/blob/master/graylog-hcplugin-setup.png)
 
-Give the new service any name you’d like, for example *graylog* and select an escalation policy. Select *Graylog* from the *Integration type* dropdown box and click *Add Service*.
-
-On the next page you will see the *Service API Key* that Graylog needs to notify PagerDuty about alerts. Copy it.
-
-![Screenshot: Copying the Service Key from PagerDuty](https://s3.amazonaws.com/graylog2public/images/plugin-pagerduty-ac-3.png)
-
-The last thing to do is to copy that token into the alarm callback configuration in Graylog.
-
-![Screenshot: Configuring the PagerDuty alarm callback in Graylog](https://s3.amazonaws.com/graylog2public/images/plugin-pagerduty-ac-4.png)
-
-Click *Add alert destination* and you are done. Your PagerDuty account will now receive alerts of this stream.
 
 ## Build
 
