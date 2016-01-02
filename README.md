@@ -1,7 +1,9 @@
 Hazelcast log4j2 Plugin for Graylog
 ============================
 
-Buraya biseyler yaz
+Plugin designed for [Apache Log4j2](https://logging.apache.org/log4j/2.x/) logs messages send to a [Graylog2](http://www.graylog2.org) servers by [Hazelcast](http://hazelcast.org) cluster.
+
+This plugin work together [Log4j2-Appender](https://github.com/kutuni/hazelcast-log4j--appender).
 
 **Required Graylog version:** 1.0 and later
 
